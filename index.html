@@ -20,6 +20,8 @@
     />
 
     <link rel="stylesheet" href="./css/style.css" />
+
+    <script defer src="./script.js"></script>
   </head>
   <body>
     <main>
@@ -59,13 +61,20 @@
         <div class="center">
           <!-- video-con -->
           <figure>
-            <video
+            <!-- <video
               autoplay
               loop
               muted
               playsinline
               src="./video/3255323-uhd_3840_2160_25fps.mp4"
-            ></video>
+            ></video> -->
+
+            <video
+              id="loop-video-fix-bug"
+              class="autoplay muted loop playsinline"
+            >
+              <source src="./video/3255323-uhd_3840_2160_25fps.mp4" />
+            </video>
 
             <!-- overlay-con -->
             <div class="overlay-con">
